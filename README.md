@@ -9,7 +9,7 @@
  •	 use any IDE like (VSCode,Eclipse,IntelliJ IDEA)
 //procedure for starting this application step by step (backend):
 
-
+$ git clone https://github.com/MitraAbhik007/Library-Management-System.git
 
  $ cd backend
 

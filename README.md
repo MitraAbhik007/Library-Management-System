@@ -22,7 +22,7 @@ $ git clone https://github.com/MitraAbhik007/Library-Management-System.git
  
  •	Angular CLI - npm install -g @angular/cli
 
- //👉Visual interface of this application:
+ //Visual interface of this application:
 
 --book management application page of Library_management_system--
 

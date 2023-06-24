@@ -13,6 +13,9 @@ import { AddAuthorsComponent } from './add-authors/add-authors.component';
 import { AddLoansComponent } from './add-loans/add-loans.component';
 import { AddPublishersComponent } from './add-publishers/add-publishers.component';
 import { AddStudentsComponent } from './add-students/add-students.component';
+import { BooksIssuedComponent } from './BooksIssued/BooksIssued.component';
+import { TakeBookComponent } from './take-book/take-book.component';
+import { ReturnBookComponent } from './return-book/take-book.component';
 
 const routes: Routes = [
 {
@@ -40,6 +43,14 @@ component: AddBooksComponent,
   component: AddPublishersComponent,
 },
 {
+  path: 'take-book',
+  component: TakeBookComponent,
+},
+{
+  path: 'return-book',
+  component: ReturnBookComponent,
+},
+{
   path : 'books',
   component : BookComponent,
 },
@@ -56,12 +67,15 @@ component: AddBooksComponent,
   component : AuthorComponent
 },
 {
-  path : 'students',
-  component : StudentComponent
+  path: 'students',
+  component: StudentComponent,
+  children: [
+    { path: '', component: BookComponent }, // Add this child route for '/books'
+  ],
 },
 {
-  path : 'loans',
-  component : LoanComponent
+  path : 'BooksIssued',
+  component : BooksIssuedComponent
 },
 {
   path : 'publishers',

@@ -1,37 +1,84 @@
+/* Table Styles */
 table {
-    overflow: auto;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even){background-color: #f2f2f2}
-  
-  th {
-    background-color: #04AA6D;
-    color: white;
-  }
-
-
-  .button {
-    background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
-.title-green{
-color: green;
+  overflow: auto;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.title-red{
-color: red;
+th, td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Button Styles */
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #048c5d;
+}
+
+.button:active {
+  background-color: #036347;
+}
+
+/* Title Styles */
+.title-green {
+  color: #04AA6D;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.title-red {
+  color: #04AA6D;
+  font-size: 20px;
+  font-style: italic;
+}
+body {
+  background-color: #777; /* Replace with your desired background color */
+}
+
+/* Container Styles */
+.container {
+ /* background-image: url("img_tree.gif"), url("paper.gif"); */
+  background-color: #04AA6D;
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+}
+
+.container h1 {
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

@@ -109,14 +109,26 @@ public class Book {
         return subgenre;
     }
 
-
-
-
-
-
-    
-
     public void setSubgenre(String subgenre) {
         this.subgenre = subgenre;
     }
+
+
+    public Book() {
+    }
+
+    public Book(Long id, String name, String author, String isbn, String publicationDate,
+                String publisher, Long copies, String category, String genre, String subgenre) {
+        this.id = id;
+        this.name = name;
+        this.author = author;
+        this.isbn = isbn;
+        this.publicationDate = publicationDate;
+        this.Publisher = publisher;
+        this.copies = copies;
+        this.category = category;
+        this.genre = genre;
+        this.subgenre = subgenre;
+    }
+
 }

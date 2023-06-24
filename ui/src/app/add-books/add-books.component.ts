@@ -12,6 +12,7 @@ export class AddBooksComponent implements OnInit {
   booksForm : FormGroup;
   constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router ) { 
     this.booksForm = this.formbuilder.group({
+      id:['',Validators.required],
       name: ['', Validators.required],
       author: [],
       isbn: [],
@@ -33,16 +34,11 @@ export class AddBooksComponent implements OnInit {
     this.http.post('http://localhost:8080/books/saveBooks',bookData)
     .subscribe(response => {
       console.log('Book saved to DB', response)
-      this.router.navigateByUrl('/books')
+      this.router.navigateByUrl('/admins')
     }, error =>{
       console.error("Error in book save", error)
     }
     );
 
   }
-
-  
-
-
-
 }

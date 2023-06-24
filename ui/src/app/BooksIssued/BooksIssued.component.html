@@ -1,0 +1,26 @@
+<h1 [ngClass]="isGreen? 'title-green':'title-red'" >{{title}}</h1>
+
+<h2 *ngIf="BooksIssued.length<1">No Data</h2>
+<div style= "margin: 20px; float:right">
+</div>
+<table>
+    <thead>
+      <tr>
+        <th>ISBN</th>
+        <th>STUDENT_ID</th>
+        <th>TAKEN_DATE</th>
+        <th>RETURN_DATE</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="BooksIssued.length > 0">
+      <tr *ngFor="let BooksIss of BooksIssued">
+        <td>{{BooksIss.isbn}}</td>
+        <td>{{BooksIss.s_id}}</td>
+        <td>{{BooksIss.taken_date}}</td>
+        <td>{{BooksIss.return_date}}</td>
+        <td>
+          <!-- <button (click)="deleteStudent(student.id)">Delete</button> -->
+        </td>
+      </tr>
+    </tbody>
+  </table>

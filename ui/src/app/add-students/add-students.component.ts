@@ -12,6 +12,7 @@ export class AddStudentsComponent implements OnInit {
   studentsForm : FormGroup;
   constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router ) { 
     this.studentsForm = this.formbuilder.group({
+      id: [0],
       name: ['', Validators.required],
       dept: [],
       rollNumber: [],

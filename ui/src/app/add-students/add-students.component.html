@@ -2,6 +2,10 @@
     <h1> Add Students</h1>
 
     <form [formGroup]="studentsForm" (ngSubmit)="saveStudent()" >
+      <div>
+        <label for="id">id:</label>
+        <input type="number" id="id" formControlName="id" />
+      </div>
         <div>
           <label for="name">Name:</label>
           <input type="text" id="name" formControlName="name" />

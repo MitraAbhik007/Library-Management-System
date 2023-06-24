@@ -1,8 +1,16 @@
+<body style="background-color: #c8abab;">
 <h1 [ngClass]="isGreen? 'title-green':'title-red'" >{{title}}</h1>
+ <!-- Replace with your desired background color -->
+  <!-- Your webpage content goes here -->
+
 
 <h2 *ngIf="students.length<1">No Data</h2>
+
 <div style= "margin: 20px; float:right">
   <button class="button" (click)="addStudents()"> Add students</button>
+  <button class="button" (click)="TakeBook()">Take Books</button>
+  <button class="button" (click)="Books()">Books</button>
+  <button class="button" (click)="ReturnBook()">Return Books</button>
 </div>
 <table>
     <thead>
@@ -30,3 +38,4 @@
       </tr>
     </tbody>
   </table>
+</body>

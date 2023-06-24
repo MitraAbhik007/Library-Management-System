@@ -61,4 +61,12 @@ public class Student {
     public void setMobileNo(String mobileNo) {
         this.mobileNo = mobileNo;
     }
+    public Student(long id, String name, String dept, String rollNumber, String birthDate, String mobileNo) {
+        this.id = id;
+        this.name = name;
+        this.dept = dept;
+        this.rollNumber = rollNumber;
+        this.BirthDate = birthDate;
+        this.mobileNo = mobileNo;
+    }
 }

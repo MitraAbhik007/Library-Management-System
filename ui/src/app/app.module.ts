@@ -19,6 +19,9 @@ import { AddStudentsComponent } from './add-students/add-students.component';
 import { AddPublishersComponent } from './add-publishers/add-publishers.component';
 import { AddAuthorsComponent } from './add-authors/add-authors.component';
 import { AddLoansComponent } from './add-loans/add-loans.component'
+import { BooksIssuedComponent } from './BooksIssued/BooksIssued.component';
+import { TakeBookComponent } from './take-book/take-book.component';
+import { ReturnBookComponent } from './return-book/take-book.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { AddLoansComponent } from './add-loans/add-loans.component'
     AdminComponent,
     AuthorComponent,
     StudentComponent,
+    TakeBookComponent,
+    BooksIssuedComponent,
+    ReturnBookComponent,
     LoanComponent,
     PublisherComponent,
     SidenavComponent,

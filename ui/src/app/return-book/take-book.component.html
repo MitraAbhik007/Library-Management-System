@@ -1,0 +1,18 @@
+<div style="padding-left: 100px;">
+    <h1>Return Book</h1>
+
+    <form [formGroup]="TakeBookForm" (ngSubmit)="TakeBook()" >
+        <div>
+          <label for="isbn">ISBN</label>
+          <input type="text" id="isbn" formControlName="isbn" />
+        </div>
+        <div>
+          <label for="s_id">Student Id:</label>
+          <input type="number" id="s_id" formControlName="s_id" />
+        </div>
+        <button type="submit">Save</button>
+      </form>
+</div>
+
+ <h3> Form status: {{TakeBookForm.valid}}</h3>
+<h3> Form json: {{TakeBookForm.value | json}}</h3> 

@@ -1,19 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TakeBookComponent } from './take-book.component';
 
-import { AddBooksComponent } from './add-books.component';
-
-describe('AddBooksComponent', () => {
-  let component: AddBooksComponent;
-  let fixture: ComponentFixture<AddBooksComponent>;
+describe('TakeBookComponent', () => {
+  let component: TakeBookComponent;
+  let fixture: ComponentFixture<TakeBookComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddBooksComponent ]
+      declarations: [ TakeBookComponent ]
     })
     .compileComponents();
   });
+
   beforeEach(() => {
-    fixture = TestBed.createComponent(AddBooksComponent);
+    fixture = TestBed.createComponent(TakeBookComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

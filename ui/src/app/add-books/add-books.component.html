@@ -2,6 +2,10 @@
     <h1> Add Books</h1>
 
     <form [formGroup]="booksForm" (ngSubmit)="saveBook()" >
+      <div>
+        <label for="id">id:</label>
+        <input type="text" id="id" formControlName="id" />
+      </div>
         <div>
           <label for="title">Title:</label>
           <input type="text" id="title" formControlName="name" />

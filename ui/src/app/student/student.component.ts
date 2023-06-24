@@ -19,12 +19,21 @@ export class StudentComponent implements OnInit {
   ngOnInit(): void {
     this.fetchAllStudents()
   }
-
+  TakeBook() {
+    this.router.navigateByUrl('/take-book')
+  }
+  Books() {
+    this.router.navigateByUrl('/books')
+  }
+  ReturnBook() {
+    this.router.navigateByUrl('/return-book')
+  }
   addStudents(){
    
     console.log("addStudents button clicked!!")
     this.router.navigateByUrl('/add-students')
   }
+  
 
   fetchAllStudents(){
     this.http.get("http://localhost:8080/students/getAllStudents")
